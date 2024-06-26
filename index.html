@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/6ae4c0fc70.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Projeto RAE</title>
+</head>
+<body>
+    <header>
+        <ul>
+            <li>
+                <a target="_blank" href="https://wa.me/message/NCJ6I3ET7L4TN1">Whatsapp</a>
+                <i class="fa-brands fa-whatsapp-square"></i>
+            </li>
+            <li>
+                <a target="_blank" href="mailto:projetoaulasparaquemquer@gmail.com">Email</a>
+                <i class="fa-solid fa-square-envelope"></i>
+            </li>
+            <li>
+                <a target="_blank" href="https://www.instagram.com/rae.reforcoescolar/">Instagram</a>
+                <i class="fa-brands fa-instagram-square"></i>
+            </li>
+        </ul>
+    </header>
+    <main>
+        <section class="container">
+            <div class="name">
+                <h1>RAE</h1>
+                <h5>Reforço e Acompanhamento Escolar <br>Online e Presencial</h5>
+                <h6>Está com dúvida em exatas? Podemos te ajudar! Ah, mas o problema é humanas? Nós conseguimos auxiliar! Ih, mas e biológicas?? Também!</h6>
+            </div>
+
+            <div onclick="displayAbout()" id="arrow">
+                <i id="animation" class="fa-solid fa-arrow-down"></i>
+            </div>
+
+            <div style="display: none;" id="about">
+                <p>As aulas particulares para reforço escolar são essenciais porque oferecem um ambiente personalizado e <br>
+                    focado nas necessidades individuais de cada aluno. Em contraste com a sala de aula tradicional, <br>
+                    onde é difícil atender a todos os ritmos de aprendizado, <br>
+                    as aulas particulares permitem uma abordagem direcionada às dificuldades específicas de cada estudante.<br>
+                    Isso não só fortalece o entendimento dos conteúdos, mas também aumenta a confiança e a motivação para aprender, <br>
+                    proporcionando um caminho mais eficaz para o sucesso acadêmico e emocional.<br>
+                    <br>
+                    <big><strong>Venha conhecer nossa escola e nossos pacotes de aula!</strong></big>
+                    </p>
+            </div>
+            <div class="bottom-right-text">
+                <p>Para mais informações, acesse nossos links no topo da página.</p>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        function displayAbout() {
+            var arrow = document.getElementById('animation');
+            arrow.classList.toggle('rotate');
+            var display = document.getElementById('about');
+            display.classList.toggle('active');
+        }
+    </script>
+
+    <!-- Referência para o arquivo CSS local -->
+    <link rel="stylesheet" href="style.css">
+</body>
+</html>
